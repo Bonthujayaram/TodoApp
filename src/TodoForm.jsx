@@ -29,9 +29,6 @@ const TodoForm = ({ onAdd }) => {
       <label>Todo</label>
     </div>
       <button type="submit">Add Todo</button>
-      <div className="Change-link">
-        <a href="#" class="TodoList-link">View TodoList</a>
-      </div>
     </form>
     
   );
