@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,600&display=swap');
+
+/* src/App.css */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  /* background: #eef0f4; */
+  background:url('https://getwallpapers.com/wallpaper/full/3/1/3/295217.jpg') no-repeat;
+  background-size:cover;
+  background-position:center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.cards .card{
+  position: relative;
+  width: 650px;
+  height: 650px;
+  box-shadow: inset 20px 20px 20px rgba(0, 0, 0, 0.05),
+  25px 35px 20px rgba(0, 0, 0, 0.05),
+  25px 30px 30px rgba(0, 0, 0, 0.05),
+  inset -10px -10px 15px rgba(233, 249, 255, 0.9),
+  10px 10px 20px rgba(237, 248, 250, 0.9);
+  transition: all 0.5s ease;  
+}
+
+.cards .card:hover{
+  border-radius: 51% 49% 65% 35% / 65% 61% 39% 35% ;
+}
+
+.cards .card::before{
+  position: absolute;
+  content: '';
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  top: 15%;
+  left: 25%;
+  box-shadow: rgb(204, 219, 232) 2px 2px 2px 0px inset,
+  rgba(255, 255, 255, 0.5) -2px -2px 3px 1px inset,
+  rgb(204, 219, 232) 2px 2px 2px 0px;
+  border-radius: 50%;
+  opacity: 0.9;
+}
+
+.cards .card::after{
+  position: absolute;
+  content: '';
+  background: transparent;
+  width: 15px;
+  height: 15px;
+  top: 25%;
+  left: 32%;
+  box-shadow: rgb(204, 219, 232) 2px 2px 2px 0px inset,
+  rgba(255, 255, 255, 0.5) -2px -2px 3px 1px inset,
+  rgb(204, 219, 232) 2px 2px 2px 0px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+
+.card:nth-child(1){
+  border-radius: 53% 47% 37% 63% / 41% 41% 59% 59%  ;
+}
+
+
+.cards .card .card__content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 10px;
+}
+
+.cards .card-1 .card__content button{
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  font-size: 1rem;
+  border: 1px solid aqua;
+  color: #ffecd1;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: all 0.4s ease;
+}
+
+.App {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border-radius: 15px;
+  box-shadow: inset 20px 20px 20px rgb(167, 243, 255),
+              25px 35px 20px rgba(0, 0, 0, 0.05),
+              25px 30px 30px rgba(0, 0, 0, 0.05),
+              inset -10px -10px 15px rgba(176, 234, 255, 0.9),
+              10px 10px 20px rgba(177, 243, 255, 0.9);
+  transition: all 0.5s ease; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  padding: 5px; /* Adjust this value to your preference */
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-style: italic;
+  font-size: 2em;
+  text-align: center;
+  margin: -50px; /* Adjust this value as needed */
+  color: #333;
+  font-weight: bold; /* Makes the font bold */
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+
+
+.input-box {
+  position:relative;
+  width:310px;
+  margin:30px 0;
+  border-bottom:1px solid black;
+}
+.input-box label {
+  position:absolute;
+  top:50%;
+  left:5px;
+  transform:translateY(-50%);
+  font-size:1.1em;
+  color:#111;
+  pointer-events:none;
+  transition:.5s;
+}
+.input-box input:focus  ~ label,
+.input-box input:valid  ~ label {
+  top:-5px;
+}
+.input-box input {
+  width:100%;
+  height:50px;
+  background:transparent;
+  border:none;
+  outline:none;
+  font-size:1.3em;
+  color:#000;
+  padding:0 35px 0 5px;
+}
+.input-box .icon {
+  position:absolute;
+  right:8px;
+  top:50%;
+  color: #111;
+  transform: translateY(-50%);
+}
+
+.Change-link {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.TodoList-link {
+  text-decoration: none;
+  color: #333;
+}
+
+button {
+  padding: 10px 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+button:hover{
+  scale: 105%;
+}
+
+button[type="submit"] {
+  width:100%;
+  height:40px;
+  background-color:black;
+  border:1px dashed black;
+  border-radius:40px;
+  cursor:pointer;
+  font-size:1.5em;
+  color:#66fcf1;
+  font-weight:500;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.todo-item:last-child {
+  border-bottom: none;
+}
+
+.todo-item span {
+  flex: 1;
+  text-align: left;
+}
+
+.todo-item input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.todo-item button {
+  margin-left: 10px;
+}
+
+.todo-item button.edit {
+  background-color: #28a745;
+  color: white;
+}
+
+.todo-item button.edit:hover {
+  background-color: #218838;
+}
+
+.todo-item button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.todo-item button.delete:hover {
+  background-color: #c82333;
+}
